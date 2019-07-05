@@ -1,8 +1,9 @@
+package com.acme.utils;
 
 public class MyDate {
 
 	// Initialize time variables
-	int day, month, year;
+	public int day, month, year;
 	
 	// Default Empty Constructor
 	public MyDate() {
