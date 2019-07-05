@@ -22,4 +22,8 @@ public class Order {
 	public static void setTaxRate(double newRate) {
 		taxRate = newRate;
 	}
+	
+	public static void computeTaxOn(double anAmount) {
+		System.out.println("The tax for " + anAmount + " is: " + anAmount * Order.taxRate);
+	}
 }
