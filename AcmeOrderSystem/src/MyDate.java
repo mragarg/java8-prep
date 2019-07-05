@@ -6,7 +6,9 @@ public class MyDate {
 	
 	// Default Empty Constructor
 	public MyDate() {
-		
+		this.month = 01;
+		this.day = 01;
+		this.year = 2000;
 	}
 	
 	// Constructor with arguments
