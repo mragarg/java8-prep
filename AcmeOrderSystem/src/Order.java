@@ -4,15 +4,28 @@ public class Order {
 	String customer;
 	String product;
 	int quantity;
-
-	static double taxRate = 0.05;
+	
+	static double taxRate;
+	
+	// Static initialization block
+	static {
+		taxRate = 0.05;
+	}
 	
 	public Order(MyDate d, double amt, String c, String p, int q){
-		orderDate=d;
-		orderAmount=amt;
-		customer=c;
-		product=p;
-		quantity=q;
+		orderDate = d;
+		orderAmount = amt;
+		customer = c;
+		product = p;
+		quantity = q;
+	}
+	
+	public Order(MyDate d, double amt, String c){
+		this.orderDate = d;
+		this.orderAmount = amt;
+		this.customer = c;
+		this.product = "Anvil";
+		quantity = 1;
 	}
 	
 	public String toString(){
