@@ -18,4 +18,8 @@ public class Order {
 	public String toString(){
 		return quantity + " ea. " + product + " for " + customer; 
 	}
+	
+	public static void setTaxRate(double newRate) {
+		taxRate = newRate;
+	}
 }
